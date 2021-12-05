@@ -1,7 +1,5 @@
-# The_DeathWishers
-
 # Lab 2: The Game of Set
-  Date: 16/09/2020
+  Date: 18/05/2021
 
 ## Installation Instruction
 ### Install
