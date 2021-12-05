@@ -16,63 +16,33 @@
 ## Game Introduction
    
 ### Game Functions (Project Class)
-* `Card.rb`  
-    Set up the basic element of the card
-* Number
-    * 1
-    * 2
-    * 3
-* Color
-    * Red
-    * Green
-    * Purple
-* Shape
-    * Diamond
-    * Oval
-    * Squiggle
-* Shading
-    * Soild
-    * Empty
-    * Striped
-  
-* `Deck.rb`  
-   Generate the deck (which has a total amount of 81)
-   
-* `Deck.rb`  
-   Generate the environment of the game
-   
-* `Check.rb`  
-   Check the set
-   
-* `Player.rb`  
-   Generate the one-person player (Player yourself)
-   
-* `UserInput.rb`  
-   Check the input to determine if the game goes continue or not
-   
-* `Main.rb`  
-   main file to start the game
+shape (diamond, oval, or squiggle)
+color (red, green, or purple)
+number (one, two, or three)
+shading (empty, slashed, or filled)
 
-### Contributors
-* Xiaoliang Chen
-    * Created `card.rb`, `table.rb`, `check.rb`, `player.rb`, and `userInput.rb`
-    * Testing and adjust functions of these files
+Goal:
+The goal of the game is to take the most number of “Sets” possible where a set consists of: 3 cards are a Set if the characteristic (shape, color, number, shading) is the same or distinct for each of the cards. 
 
-* Salil Monga
-    * Created 'main.rb' file to run the game.
-    * Made changes to the board.
+Properties: 
+More precisely three cards from a SET if each of the following hold true: 
+all cards have the same shape OR all cards have different shapes, 
+all cards have the same color OR all cards have different colors, 
+all cards have the same number OR all cards have different numbers, 
+all cards have the same shading OR all cards have different shading. 
 
-* Yongbo(Kevin) Chen
-    * Create `Deck.rb` and set up the basic loop to insert Cards and function of `get_card`
-    * Testing and adjust function of `Card.rb`,`Deck.rb`, and `Check.rb`
-    * Improved the function to make the game perform better
+Rule:
+The game of Set begins with 12 cards being placed on the table, however, it is possible for there to be no Sets amongst the 12 cards.
 
-* Miles Lindgren
-    * Testing and debugging game code
-    * Helped organize the files to make the code easier to use and add on to in the future
- 
-* Rahul Reddy
-    * Testing and debugging of program code for functionality
-    * Making sure the project meets all requirments
+If a player sees three cards that form a Set they say “Set!” and grab the three cards. 
+The dealer adds more cards to the table as they are taken away. 
+If after a few minutes no one has found a Set the dealer adds three more cards; repeating until someone finds a Set. 
+The game ends when all the cards have been dealt and no one can find any more Sets. The player with the most Sets at the end of the game wins!
+
+
+Something important:
+Each combination of shape, color, number, and shading appears exactly once in a Set deck.
+num _card = (# colors) · # shapes) · # numbers) · # fills) = 3 · 3···3 · 3 = 34 = 81
+
     
 
